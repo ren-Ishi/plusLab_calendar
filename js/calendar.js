@@ -1,6 +1,6 @@
 async function fetchData() {
   try {
-    const response = await fetch('calendarDB.json');
+    const response = await fetch('../calendarDB.json');
     const jsonData = await response.json();
     
     const calendarBox = document.getElementById('calendar-box');
