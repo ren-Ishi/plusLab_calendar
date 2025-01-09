@@ -1,0 +1,81 @@
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+	font-weight: bolder;
+  background-color: #fafafa;
+
+}
+
+#container {
+  width: 100vw;
+  margin: auto;
+}
+
+h1::before {
+  content: "ー";
+  padding: 10px;
+  color: rgb(189, 18, 66);
+}
+
+h1 {
+  padding: 20px;
+}
+
+
+#calendar-area{
+  margin-bottom: 40px;
+}
+
+#schedule{
+  display: grid;
+  grid-template-columns: 46vw 46vw;
+  grid-template-rows: 600px;
+  height: auto;
+  width: 90%;
+  margin: 40px;
+}
+
+#schedule #today{
+  background-color: rgba(153, 153, 119, 0.152);
+}
+
+#schedule table,#schedule th,#schedule td{
+  border: 1px solid #aaa;
+  border-collapse: collapse
+}
+
+#schedule th{
+  height: 40px;
+  max-height: 40px;
+  background-color: #f2f2f2;
+}
+
+
+#schedule td{
+  min-height: 30px;
+  padding: 6px;
+  vertical-align:top;
+}
+
+#event{
+  margin: auto;
+}
+
+#event h2{
+  padding: 15px;
+  margin: 10px;
+  margin-left: 20px;
+  border-left: 5px solid rgb(189, 18, 66);
+}
+
+@media screen and (max-width: 959px) {
+	#schedule{
+		grid-template-columns: 100%;
+		margin: auto;
+		font-size: 13px;
+		grid-template-rows: 500px;
+	}
+	#schedule th{
+		height: 14px;
+		max-height: 10px;
+	}
+}
