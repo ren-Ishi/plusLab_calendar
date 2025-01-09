@@ -74,7 +74,9 @@ h1 {
 		font-size: 13px;
 		grid-template-rows: 500px;
 	}
+
 	#schedule th{
 		height: 14px;
+		max-height: 14px;
 	}
 }
